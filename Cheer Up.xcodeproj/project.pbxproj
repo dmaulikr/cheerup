@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEADB1DA1E47CA3800418BB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1D91E47CA3800418BB6 /* AppDelegate.swift */; };
+		CEADB1DC1E47CA3800418BB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1DB1E47CA3800418BB6 /* ViewController.swift */; };
+		CEADB1DF1E47CA3800418BB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEADB1DD1E47CA3800418BB6 /* Main.storyboard */; };
+		CEADB1E11E47CA3800418BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEADB1E01E47CA3800418BB6 /* Assets.xcassets */; };
+		CEADB1E41E47CA3800418BB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEADB1E21E47CA3800418BB6 /* LaunchScreen.storyboard */; };
+		CEADB1EF1E47CA3800418BB6 /* Cheer_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1EE1E47CA3800418BB6 /* Cheer_UpTests.swift */; };
+		CEADB1FA1E47CA3800418BB6 /* Cheer_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1F91E47CA3800418BB6 /* Cheer_UpUITests.swift */; };
+		CEADB1FF1E47CA3800418BB6 /* Cheer Up WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CEADB1FE1E47CA3800418BB6 /* Cheer Up WatchKit App.app */; };
+		CEADB2051E47CA3800418BB6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEADB2031E47CA3800418BB6 /* Interface.storyboard */; };
+		CEADB2071E47CA3800418BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEADB2061E47CA3800418BB6 /* Assets.xcassets */; };
+		CEADB20E1E47CA3800418BB6 /* Cheer Up WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEADB20D1E47CA3800418BB6 /* Cheer Up WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CEADB2151E47CA3800418BB6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB2141E47CA3800418BB6 /* InterfaceController.swift */; };
+		CEADB2171E47CA3800418BB6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB2161E47CA3800418BB6 /* ExtensionDelegate.swift */; };
+		CEADB2191E47CA3800418BB6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB2181E47CA3800418BB6 /* NotificationController.swift */; };
+		CEADB21B1E47CA3800418BB6 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB21A1E47CA3800418BB6 /* ComplicationController.swift */; };
+		CEADB21D1E47CA3800418BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEADB21C1E47CA3800418BB6 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEADB1EB1E47CA3800418BB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEADB1CE1E47CA3700418BB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEADB1D51E47CA3700418BB6;
+			remoteInfo = "Cheer Up";
+		};
+		CEADB1F61E47CA3800418BB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEADB1CE1E47CA3700418BB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEADB1D51E47CA3700418BB6;
+			remoteInfo = "Cheer Up";
+		};
+		CEADB2001E47CA3800418BB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEADB1CE1E47CA3700418BB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEADB1FD1E47CA3800418BB6;
+			remoteInfo = "Cheer Up WatchKit App";
+		};
+		CEADB20F1E47CA3800418BB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEADB1CE1E47CA3700418BB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEADB20C1E47CA3800418BB6;
+			remoteInfo = "Cheer Up WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEADB2241E47CA3900418BB6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CEADB20E1E47CA3800418BB6 /* Cheer Up WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEADB2281E47CA3900418BB6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CEADB1FF1E47CA3800418BB6 /* Cheer Up WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CEADB1D61E47CA3800418BB6 /* Cheer Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cheer Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEADB1D91E47CA3800418BB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEADB1DB1E47CA3800418BB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEADB1DE1E47CA3800418BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEADB1E01E47CA3800418BB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEADB1E31E47CA3800418BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEADB1E51E47CA3800418BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEADB1EA1E47CA3800418BB6 /* Cheer UpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cheer UpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEADB1EE1E47CA3800418BB6 /* Cheer_UpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cheer_UpTests.swift; sourceTree = "<group>"; };
+		CEADB1F01E47CA3800418BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEADB1F51E47CA3800418BB6 /* Cheer UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cheer UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEADB1F91E47CA3800418BB6 /* Cheer_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cheer_UpUITests.swift; sourceTree = "<group>"; };
+		CEADB1FB1E47CA3800418BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEADB1FE1E47CA3800418BB6 /* Cheer Up WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cheer Up WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEADB2041E47CA3800418BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CEADB2061E47CA3800418BB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEADB2081E47CA3800418BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEADB20D1E47CA3800418BB6 /* Cheer Up WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Cheer Up WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEADB2131E47CA3800418BB6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CEADB2141E47CA3800418BB6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		CEADB2161E47CA3800418BB6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CEADB2181E47CA3800418BB6 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		CEADB21A1E47CA3800418BB6 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		CEADB21C1E47CA3800418BB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEADB21E1E47CA3900418BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEADB1D31E47CA3700418BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEADB1E71E47CA3800418BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEADB1F21E47CA3800418BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEADB20A1E47CA3800418BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEADB1CD1E47CA3700418BB6 = {
+			isa = PBXGroup;
+			children = (
+				CEADB1D81E47CA3800418BB6 /* Cheer Up */,
+				CEADB1ED1E47CA3800418BB6 /* Cheer UpTests */,
+				CEADB1F81E47CA3800418BB6 /* Cheer UpUITests */,
+				CEADB2021E47CA3800418BB6 /* Cheer Up WatchKit App */,
+				CEADB2111E47CA3800418BB6 /* Cheer Up WatchKit Extension */,
+				CEADB1D71E47CA3800418BB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEADB1D71E47CA3800418BB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEADB1D61E47CA3800418BB6 /* Cheer Up.app */,
+				CEADB1EA1E47CA3800418BB6 /* Cheer UpTests.xctest */,
+				CEADB1F51E47CA3800418BB6 /* Cheer UpUITests.xctest */,
+				CEADB1FE1E47CA3800418BB6 /* Cheer Up WatchKit App.app */,
+				CEADB20D1E47CA3800418BB6 /* Cheer Up WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEADB1D81E47CA3800418BB6 /* Cheer Up */ = {
+			isa = PBXGroup;
+			children = (
+				CEADB1D91E47CA3800418BB6 /* AppDelegate.swift */,
+				CEADB1DB1E47CA3800418BB6 /* ViewController.swift */,
+				CEADB1DD1E47CA3800418BB6 /* Main.storyboard */,
+				CEADB1E01E47CA3800418BB6 /* Assets.xcassets */,
+				CEADB1E21E47CA3800418BB6 /* LaunchScreen.storyboard */,
+				CEADB1E51E47CA3800418BB6 /* Info.plist */,
+			);
+			path = "Cheer Up";
+			sourceTree = "<group>";
+		};
+		CEADB1ED1E47CA3800418BB6 /* Cheer UpTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEADB1EE1E47CA3800418BB6 /* Cheer_UpTests.swift */,
+				CEADB1F01E47CA3800418BB6 /* Info.plist */,
+			);
+			path = "Cheer UpTests";
+			sourceTree = "<group>";
+		};
+		CEADB1F81E47CA3800418BB6 /* Cheer UpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEADB1F91E47CA3800418BB6 /* Cheer_UpUITests.swift */,
+				CEADB1FB1E47CA3800418BB6 /* Info.plist */,
+			);
+			path = "Cheer UpUITests";
+			sourceTree = "<group>";
+		};
+		CEADB2021E47CA3800418BB6 /* Cheer Up WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				CEADB2031E47CA3800418BB6 /* Interface.storyboard */,
+				CEADB2061E47CA3800418BB6 /* Assets.xcassets */,
+				CEADB2081E47CA3800418BB6 /* Info.plist */,
+			);
+			path = "Cheer Up WatchKit App";
+			sourceTree = "<group>";
+		};
+		CEADB2111E47CA3800418BB6 /* Cheer Up WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CEADB2141E47CA3800418BB6 /* InterfaceController.swift */,
+				CEADB2161E47CA3800418BB6 /* ExtensionDelegate.swift */,
+				CEADB2181E47CA3800418BB6 /* NotificationController.swift */,
+				CEADB21A1E47CA3800418BB6 /* ComplicationController.swift */,
+				CEADB21C1E47CA3800418BB6 /* Assets.xcassets */,
+				CEADB21E1E47CA3900418BB6 /* Info.plist */,
+				CEADB2121E47CA3800418BB6 /* Supporting Files */,
+			);
+			path = "Cheer Up WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		CEADB2121E47CA3800418BB6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEADB2131E47CA3800418BB6 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEADB1D51E47CA3700418BB6 /* Cheer Up */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEADB2291E47CA3900418BB6 /* Build configuration list for PBXNativeTarget "Cheer Up" */;
+			buildPhases = (
+				CEADB1D21E47CA3700418BB6 /* Sources */,
+				CEADB1D31E47CA3700418BB6 /* Frameworks */,
+				CEADB1D41E47CA3700418BB6 /* Resources */,
+				CEADB2281E47CA3900418BB6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEADB2011E47CA3800418BB6 /* PBXTargetDependency */,
+			);
+			name = "Cheer Up";
+			productName = "Cheer Up";
+			productReference = CEADB1D61E47CA3800418BB6 /* Cheer Up.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEADB1E91E47CA3800418BB6 /* Cheer UpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEADB22C1E47CA3900418BB6 /* Build configuration list for PBXNativeTarget "Cheer UpTests" */;
+			buildPhases = (
+				CEADB1E61E47CA3800418BB6 /* Sources */,
+				CEADB1E71E47CA3800418BB6 /* Frameworks */,
+				CEADB1E81E47CA3800418BB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEADB1EC1E47CA3800418BB6 /* PBXTargetDependency */,
+			);
+			name = "Cheer UpTests";
+			productName = "Cheer UpTests";
+			productReference = CEADB1EA1E47CA3800418BB6 /* Cheer UpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEADB1F41E47CA3800418BB6 /* Cheer UpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEADB22F1E47CA3900418BB6 /* Build configuration list for PBXNativeTarget "Cheer UpUITests" */;
+			buildPhases = (
+				CEADB1F11E47CA3800418BB6 /* Sources */,
+				CEADB1F21E47CA3800418BB6 /* Frameworks */,
+				CEADB1F31E47CA3800418BB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEADB1F71E47CA3800418BB6 /* PBXTargetDependency */,
+			);
+			name = "Cheer UpUITests";
+			productName = "Cheer UpUITests";
+			productReference = CEADB1F51E47CA3800418BB6 /* Cheer UpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CEADB1FD1E47CA3800418BB6 /* Cheer Up WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEADB2251E47CA3900418BB6 /* Build configuration list for PBXNativeTarget "Cheer Up WatchKit App" */;
+			buildPhases = (
+				CEADB1FC1E47CA3800418BB6 /* Resources */,
+				CEADB2241E47CA3900418BB6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEADB2101E47CA3800418BB6 /* PBXTargetDependency */,
+			);
+			name = "Cheer Up WatchKit App";
+			productName = "Cheer Up WatchKit App";
+			productReference = CEADB1FE1E47CA3800418BB6 /* Cheer Up WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CEADB20C1E47CA3800418BB6 /* Cheer Up WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEADB2211E47CA3900418BB6 /* Build configuration list for PBXNativeTarget "Cheer Up WatchKit Extension" */;
+			buildPhases = (
+				CEADB2091E47CA3800418BB6 /* Sources */,
+				CEADB20A1E47CA3800418BB6 /* Frameworks */,
+				CEADB20B1E47CA3800418BB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cheer Up WatchKit Extension";
+			productName = "Cheer Up WatchKit Extension";
+			productReference = CEADB20D1E47CA3800418BB6 /* Cheer Up WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEADB1CE1E47CA3700418BB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "DJ Kim";
+				TargetAttributes = {
+					CEADB1D51E47CA3700418BB6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					CEADB1E91E47CA3800418BB6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CEADB1D51E47CA3700418BB6;
+					};
+					CEADB1F41E47CA3800418BB6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CEADB1D51E47CA3700418BB6;
+					};
+					CEADB1FD1E47CA3800418BB6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					CEADB20C1E47CA3800418BB6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CEADB1D11E47CA3700418BB6 /* Build configuration list for PBXProject "Cheer Up" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEADB1CD1E47CA3700418BB6;
+			productRefGroup = CEADB1D71E47CA3800418BB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEADB1D51E47CA3700418BB6 /* Cheer Up */,
+				CEADB1E91E47CA3800418BB6 /* Cheer UpTests */,
+				CEADB1F41E47CA3800418BB6 /* Cheer UpUITests */,
+				CEADB1FD1E47CA3800418BB6 /* Cheer Up WatchKit App */,
+				CEADB20C1E47CA3800418BB6 /* Cheer Up WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEADB1D41E47CA3700418BB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEADB1E41E47CA3800418BB6 /* LaunchScreen.storyboard in Resources */,
+				CEADB1E11E47CA3800418BB6 /* Assets.xcassets in Resources */,
+				CEADB1DF1E47CA3800418BB6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEADB1E81E47CA3800418BB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEADB1F31E47CA3800418BB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEADB1FC1E47CA3800418BB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEADB2071E47CA3800418BB6 /* Assets.xcassets in Resources */,
+				CEADB2051E47CA3800418BB6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEADB20B1E47CA3800418BB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEADB21D1E47CA3800418BB6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEADB1D21E47CA3700418BB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEADB1DC1E47CA3800418BB6 /* ViewController.swift in Sources */,
+				CEADB1DA1E47CA3800418BB6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEADB1E61E47CA3800418BB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEADB1EF1E47CA3800418BB6 /* Cheer_UpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEADB1F11E47CA3800418BB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEADB1FA1E47CA3800418BB6 /* Cheer_UpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEADB2091E47CA3800418BB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEADB2191E47CA3800418BB6 /* NotificationController.swift in Sources */,
+				CEADB21B1E47CA3800418BB6 /* ComplicationController.swift in Sources */,
+				CEADB2171E47CA3800418BB6 /* ExtensionDelegate.swift in Sources */,
+				CEADB2151E47CA3800418BB6 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEADB1EC1E47CA3800418BB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEADB1D51E47CA3700418BB6 /* Cheer Up */;
+			targetProxy = CEADB1EB1E47CA3800418BB6 /* PBXContainerItemProxy */;
+		};
+		CEADB1F71E47CA3800418BB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEADB1D51E47CA3700418BB6 /* Cheer Up */;
+			targetProxy = CEADB1F61E47CA3800418BB6 /* PBXContainerItemProxy */;
+		};
+		CEADB2011E47CA3800418BB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEADB1FD1E47CA3800418BB6 /* Cheer Up WatchKit App */;
+			targetProxy = CEADB2001E47CA3800418BB6 /* PBXContainerItemProxy */;
+		};
+		CEADB2101E47CA3800418BB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEADB20C1E47CA3800418BB6 /* Cheer Up WatchKit Extension */;
+			targetProxy = CEADB20F1E47CA3800418BB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEADB1DD1E47CA3800418BB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEADB1DE1E47CA3800418BB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEADB1E21E47CA3800418BB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEADB1E31E47CA3800418BB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CEADB2031E47CA3800418BB6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEADB2041E47CA3800418BB6 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEADB21F1E47CA3900418BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEADB2201E47CA3900418BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEADB2221E47CA3900418BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Cheer Up WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Cheer-Up.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		CEADB2231E47CA3900418BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Cheer Up WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Cheer-Up.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		CEADB2261E47CA3900418BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Cheer_Up_WatchKit_Extension;
+				INFOPLIST_FILE = "Cheer Up WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Cheer-Up.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		CEADB2271E47CA3900418BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Cheer_Up_WatchKit_Extension;
+				INFOPLIST_FILE = "Cheer Up WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Cheer-Up.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		CEADB22A1E47CA3900418BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Cheer Up/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Cheer-Up";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CEADB22B1E47CA3900418BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Cheer Up/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Cheer-Up";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CEADB22D1E47CA3900418BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Cheer UpTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Cheer-UpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cheer Up.app/Cheer Up";
+			};
+			name = Debug;
+		};
+		CEADB22E1E47CA3900418BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Cheer UpTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Cheer-UpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cheer Up.app/Cheer Up";
+			};
+			name = Release;
+		};
+		CEADB2301E47CA3900418BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Cheer UpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Cheer-UpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Cheer Up";
+			};
+			name = Debug;
+		};
+		CEADB2311E47CA3900418BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Cheer UpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Cheer-UpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Cheer Up";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEADB1D11E47CA3700418BB6 /* Build configuration list for PBXProject "Cheer Up" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEADB21F1E47CA3900418BB6 /* Debug */,
+				CEADB2201E47CA3900418BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEADB2211E47CA3900418BB6 /* Build configuration list for PBXNativeTarget "Cheer Up WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEADB2221E47CA3900418BB6 /* Debug */,
+				CEADB2231E47CA3900418BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEADB2251E47CA3900418BB6 /* Build configuration list for PBXNativeTarget "Cheer Up WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEADB2261E47CA3900418BB6 /* Debug */,
+				CEADB2271E47CA3900418BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEADB2291E47CA3900418BB6 /* Build configuration list for PBXNativeTarget "Cheer Up" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEADB22A1E47CA3900418BB6 /* Debug */,
+				CEADB22B1E47CA3900418BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEADB22C1E47CA3900418BB6 /* Build configuration list for PBXNativeTarget "Cheer UpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEADB22D1E47CA3900418BB6 /* Debug */,
+				CEADB22E1E47CA3900418BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEADB22F1E47CA3900418BB6 /* Build configuration list for PBXNativeTarget "Cheer UpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEADB2301E47CA3900418BB6 /* Debug */,
+				CEADB2311E47CA3900418BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEADB1CE1E47CA3700418BB6 /* Project object */;
+}

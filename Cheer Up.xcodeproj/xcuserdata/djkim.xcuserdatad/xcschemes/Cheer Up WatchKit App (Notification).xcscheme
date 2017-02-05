@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0820"
+   version = "2.0">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CEADB1FD1E47CA3800418BB6"
+               BuildableName = "Cheer Up WatchKit App.app"
+               BlueprintName = "Cheer Up WatchKit App"
+               ReferencedContainer = "container:Cheer Up.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CEADB1D51E47CA3700418BB6"
+               BuildableName = "Cheer Up.app"
+               BlueprintName = "Cheer Up"
+               ReferencedContainer = "container:Cheer Up.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CEADB1FD1E47CA3800418BB6"
+            BuildableName = "Cheer Up WatchKit App.app"
+            BlueprintName = "Cheer Up WatchKit App"
+            ReferencedContainer = "container:Cheer Up.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES"
+      launchAutomaticallySubstyle = "8"
+      notificationPayloadFile = "Cheer Up WatchKit Extension/PushNotificationPayload.apns">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.carousel"
+         RemotePath = "/Cheer Up WatchKit App">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CEADB1FD1E47CA3800418BB6"
+            BuildableName = "Cheer Up WatchKit App.app"
+            BlueprintName = "Cheer Up WatchKit App"
+            ReferencedContainer = "container:Cheer Up.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CEADB1FD1E47CA3800418BB6"
+            BuildableName = "Cheer Up WatchKit App.app"
+            BlueprintName = "Cheer Up WatchKit App"
+            ReferencedContainer = "container:Cheer Up.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES"
+      launchAutomaticallySubstyle = "8"
+      notificationPayloadFile = "Cheer Up WatchKit Extension/PushNotificationPayload.apns">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.carousel"
+         RemotePath = "/Cheer Up WatchKit App">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CEADB1FD1E47CA3800418BB6"
+            BuildableName = "Cheer Up WatchKit App.app"
+            BlueprintName = "Cheer Up WatchKit App"
+            ReferencedContainer = "container:Cheer Up.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CEADB1FD1E47CA3800418BB6"
+            BuildableName = "Cheer Up WatchKit App.app"
+            BlueprintName = "Cheer Up WatchKit App"
+            ReferencedContainer = "container:Cheer Up.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

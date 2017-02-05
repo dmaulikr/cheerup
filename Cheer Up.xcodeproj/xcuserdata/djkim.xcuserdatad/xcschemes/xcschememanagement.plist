@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Cheer Up WatchKit App (Complication).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Cheer Up WatchKit App (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Cheer Up WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Cheer Up.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CEADB1D51E47CA3700418BB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CEADB1E91E47CA3800418BB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CEADB1F41E47CA3800418BB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CEADB1FD1E47CA3800418BB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
