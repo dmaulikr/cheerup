@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE7AD0961ED12EAC00C64DB9 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7AD0941ED12EAC00C64DB9 /* Fabric.framework */; };
+		CE7AD0971ED12EAC00C64DB9 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7AD0951ED12EAC00C64DB9 /* Crashlytics.framework */; };
+		CE89F83F1E90615900D8BC77 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE89F83E1E90615900D8BC77 /* HealthKit.framework */; };
 		CEADB1DA1E47CA3800418BB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1D91E47CA3800418BB6 /* AppDelegate.swift */; };
 		CEADB1DC1E47CA3800418BB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADB1DB1E47CA3800418BB6 /* ViewController.swift */; };
 		CEADB1DF1E47CA3800418BB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEADB1DD1E47CA3800418BB6 /* Main.storyboard */; };
@@ -82,6 +85,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE7AD0941ED12EAC00C64DB9 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		CE7AD0951ED12EAC00C64DB9 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		CE89F83C1E90615800D8BC77 /* Cheer Up.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Cheer Up.entitlements"; sourceTree = "<group>"; };
+		CE89F83E1E90615900D8BC77 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		CEADB1D61E47CA3800418BB6 /* Cheer Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cheer Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEADB1D91E47CA3800418BB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEADB1DB1E47CA3800418BB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +121,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE89F83F1E90615900D8BC77 /* HealthKit.framework in Frameworks */,
+				CE7AD0971ED12EAC00C64DB9 /* Crashlytics.framework in Frameworks */,
+				CE7AD0961ED12EAC00C64DB9 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,15 +151,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE89F83D1E90615900D8BC77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE89F83E1E90615900D8BC77 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CEADB1CD1E47CA3700418BB6 = {
 			isa = PBXGroup;
 			children = (
+				CE7AD0941ED12EAC00C64DB9 /* Fabric.framework */,
+				CE7AD0951ED12EAC00C64DB9 /* Crashlytics.framework */,
 				CEADB1D81E47CA3800418BB6 /* Cheer Up */,
 				CEADB1ED1E47CA3800418BB6 /* Cheer UpTests */,
 				CEADB1F81E47CA3800418BB6 /* Cheer UpUITests */,
 				CEADB2021E47CA3800418BB6 /* Cheer Up WatchKit App */,
 				CEADB2111E47CA3800418BB6 /* Cheer Up WatchKit Extension */,
 				CEADB1D71E47CA3800418BB6 /* Products */,
+				CE89F83D1E90615900D8BC77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +189,7 @@
 		CEADB1D81E47CA3800418BB6 /* Cheer Up */ = {
 			isa = PBXGroup;
 			children = (
+				CE89F83C1E90615800D8BC77 /* Cheer Up.entitlements */,
 				CEADB1D91E47CA3800418BB6 /* AppDelegate.swift */,
 				CEADB1DB1E47CA3800418BB6 /* ViewController.swift */,
 				CEADB1DD1E47CA3800418BB6 /* Main.storyboard */,
@@ -239,6 +261,7 @@
 				CEADB1D31E47CA3700418BB6 /* Frameworks */,
 				CEADB1D41E47CA3700418BB6 /* Resources */,
 				CEADB2281E47CA3900418BB6 /* Embed Watch Content */,
+				CE7AD0931ED12DD700C64DB9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -332,7 +355,13 @@
 				TargetAttributes = {
 					CEADB1D51E47CA3700418BB6 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TSE722KY64;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					CEADB1E91E47CA3800418BB6 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -419,6 +448,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE7AD0931ED12DD700C64DB9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 92cd7454950bef63d25ddf54df861545921165ac 89735444f13316f8888dfaaa2293100097019bd3c0537308ade9071dfe8f82db";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEADB1D21E47CA3700418BB6 /* Sources */ = {
@@ -673,6 +718,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Cheer Up/Cheer Up.entitlements";
+				DEVELOPMENT_TEAM = TSE722KY64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Cheer Up/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Cheer-Up";
@@ -685,6 +736,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Cheer Up/Cheer Up.entitlements";
+				DEVELOPMENT_TEAM = TSE722KY64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Cheer Up/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Cheer-Up";
@@ -766,6 +823,7 @@
 				CEADB2231E47CA3900418BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEADB2251E47CA3900418BB6 /* Build configuration list for PBXNativeTarget "Cheer Up WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -774,6 +832,7 @@
 				CEADB2271E47CA3900418BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEADB2291E47CA3900418BB6 /* Build configuration list for PBXNativeTarget "Cheer Up" */ = {
 			isa = XCConfigurationList;
@@ -782,6 +841,7 @@
 				CEADB22B1E47CA3900418BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEADB22C1E47CA3900418BB6 /* Build configuration list for PBXNativeTarget "Cheer UpTests" */ = {
 			isa = XCConfigurationList;
@@ -790,6 +850,7 @@
 				CEADB22E1E47CA3900418BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEADB22F1E47CA3900418BB6 /* Build configuration list for PBXNativeTarget "Cheer UpUITests" */ = {
 			isa = XCConfigurationList;
@@ -798,6 +859,7 @@
 				CEADB2311E47CA3900418BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
